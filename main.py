@@ -54,7 +54,7 @@ def load_training_data(
 def train_model(
     training_data: list,
     test_data: list,
-    iterations: int = 25
+    iterations: int = 15
 ) -> None:
     # Build pipeline
     nlp = spacy.load("en_core_web_sm")

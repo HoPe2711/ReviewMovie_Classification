@@ -1,5 +1,5 @@
 import spacy
-
+from textblob import TextBlob
 
 TEST_REVIEW = """Chan-wook Park, you have to hand it to the guy. In my eyes, he's not only a brilliant director but a 
 brilliant director who can turn his hand to any genre and often provides something refreshing yet still ultimately 
@@ -43,6 +43,7 @@ def test_model(input_data: str = TEST_REVIEW):
         f"\tScore: {score}"
     )
 
-
+blob = TextBlob("Good ratio price/service. ")
+print(blob.detect_language())
 print("Testing model")
-test_model()
+#   test_model()
